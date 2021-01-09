@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Racheal777/recipe-project.git/static/css/main.5815ff27.chunk.css",
+    "main.js": "/Racheal777/recipe-project.git/static/js/main.09085ab1.chunk.js",
+    "main.js.map": "/Racheal777/recipe-project.git/static/js/main.09085ab1.chunk.js.map",
+    "runtime-main.js": "/Racheal777/recipe-project.git/static/js/runtime-main.8ed2ae56.js",
+    "runtime-main.js.map": "/Racheal777/recipe-project.git/static/js/runtime-main.8ed2ae56.js.map",
+    "static/css/2.e4510fa4.chunk.css": "/Racheal777/recipe-project.git/static/css/2.e4510fa4.chunk.css",
+    "static/js/2.3887fb91.chunk.js": "/Racheal777/recipe-project.git/static/js/2.3887fb91.chunk.js",
+    "static/js/2.3887fb91.chunk.js.map": "/Racheal777/recipe-project.git/static/js/2.3887fb91.chunk.js.map",
+    "index.html": "/Racheal777/recipe-project.git/index.html",
+    "static/css/2.e4510fa4.chunk.css.map": "/Racheal777/recipe-project.git/static/css/2.e4510fa4.chunk.css.map",
+    "static/css/main.5815ff27.chunk.css.map": "/Racheal777/recipe-project.git/static/css/main.5815ff27.chunk.css.map",
+    "static/js/2.3887fb91.chunk.js.LICENSE.txt": "/Racheal777/recipe-project.git/static/js/2.3887fb91.chunk.js.LICENSE.txt",
+    "static/media/break.7bc06236.jpg": "/Racheal777/recipe-project.git/static/media/break.7bc06236.jpg",
+    "static/media/burger.e883a589.jpg": "/Racheal777/recipe-project.git/static/media/burger.e883a589.jpg",
+    "static/media/cake.95307a33.jpg": "/Racheal777/recipe-project.git/static/media/cake.95307a33.jpg",
+    "static/media/cock.1a26f994.jpg": "/Racheal777/recipe-project.git/static/media/cock.1a26f994.jpg",
+    "static/media/fish.27cadfce.jpg": "/Racheal777/recipe-project.git/static/media/fish.27cadfce.jpg",
+    "static/media/styles.css": "/Racheal777/recipe-project.git/static/media/vegg.9e657e48.jpg",
+    "static/media/App.css": "/Racheal777/recipe-project.git/static/media/wallp.7b2e7633.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ed2ae56.js",
+    "static/css/2.e4510fa4.chunk.css",
+    "static/js/2.3887fb91.chunk.js",
+    "static/css/main.5815ff27.chunk.css",
+    "static/js/main.09085ab1.chunk.js"
+  ]
+}
