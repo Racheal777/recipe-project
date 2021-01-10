@@ -23,7 +23,9 @@ function App() {
     return (
         <div>
             
-           
+            <BrowserRouter basename={window.location.pathname || ''}>
+  <Route exact path="/" component={Index} />
+
            
             <Router>
       
@@ -44,7 +46,7 @@ function App() {
 
       </Switch>
       </Router>
-            
+      </BrowserRouter>  
         </div>
     )
 }
