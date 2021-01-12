@@ -15,24 +15,24 @@ export default function App() {
       <Navbar collapseOnSelect expand="lg" bg = "dark"variant="dark">
        
      
-        <Navbar.Brand href="/"><h2>ChefsCorner</h2></Navbar.Brand>
+        <Navbar.Brand href="/#/"><h2>ChefsCorner</h2></Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="mr-auto">
 
-          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/#/">Home</Nav.Link>
 
             <NavDropdown title="Explore More" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/Aout">About</NavDropdown.Item>
-              <NavDropdown.Item href="/Nutrition">Nutrition</NavDropdown.Item>
-              <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="/#/About">About</NavDropdown.Item>
+              <NavDropdown.Item href="/#/Nutrition">Nutrition</NavDropdown.Item>
+              <NavDropdown.Item href="/#/Contact">Contact</NavDropdown.Item>
               <NavDropdown.Divider />
               
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/Login">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="/SignUp">
+            <Nav.Link href="/#/Login">Login</Nav.Link>
+            <Nav.Link eventKey={2} href="/#/SignUp">
               SignUp
             </Nav.Link>
           </Nav>

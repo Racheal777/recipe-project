@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import {HashRouter,Switch,Route} from 'react-router-dom';
 import Navbar from'./Components/Navbar'
 import Home from'./Components/Home'
 import SignUp from'./Components/SignUp'
@@ -7,6 +7,7 @@ import LogIn from'./Components/LogIn'
 import Profile from'./Components/Profile'
 
 import Contact from'./Components/Contact'
+import { Component } from 'react';
 
 
 
@@ -19,15 +20,18 @@ import Contact from'./Components/Contact'
 
 
 
-function App() {
-    return (
-        <div>
+class App extends Component{
+    render(){
+        return(
+   
+    
+        
             
-            <BrowserRouter basename={window.location.pathname || ''}>
-  <Route exact path="/" component={Index} />
-
+      <HashRouter basename= "/">
+                
+                <div>
            
-            <Router>
+           
       
       <Navbar/>
       <Switch>
@@ -40,15 +44,14 @@ function App() {
 
       <Route path = "/Profile" component= {Profile} />
       <Route path = "/Contact" component= {Contact} />
-      {/* <Route path = "/MainPage" component= {MainPage} />
-      
-      */}
+     
 
       </Switch>
-      </Router>
-      </BrowserRouter>  
-        </div>
-    )
+      </div>
+      </HashRouter>  
+            
+      );
+    }
 }
 
 export default App;

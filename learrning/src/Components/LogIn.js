@@ -7,6 +7,7 @@ import Profile from './Profile'
 import History from './History'
 
 
+
 import '../Components/styles.css'
 
 
@@ -53,6 +54,7 @@ function Login() {
             <>
             <Profile/>
             <History/>
+            
 
             {/* <AddRecipe/> */}
 

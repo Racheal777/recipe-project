@@ -1,58 +1,60 @@
-import React, { useState } from "react";
-import "../App.css";
-import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
-import Recipe from "./Recipe";
+import React from 'react'
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    var storedClicks = 0;
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
 
-
-const Display =(props)=>{
-
-    const [query, setQuery] = useState("");
-    const [recipes, setRecipes] = useState([]);
-    
-
-    // const APP_ID = "01797b84";
-    // const APP_KEY= "7b04083469260c0803c24979c75b69fb";	
-   
-    const url= "https://api.edamam.com/search?q=''&app_id=01797b84&app_key=7b04083469260c0803c24979c75b69fb"
-
-    
-    
-
-    
-    
-const getData = async () => {
-    if (query !== "") {
-      const result = await axios.get(url);
-     
-      console.log(result);
-      setRecipes(result.data.hits);
-      setQuery("");
-      
-   
+    if (localStorage.getItem('clicks')) {
+      storedClicks = parseInt(localStorage.getItem('clicks'));
     }
-  };
 
- 
+    this.state = {
+      clicks: storedClicks,
+    };
+    this.click = this.click.bind(this);
+  }
 
-  const onClick = e => {
-    e.preventDefault();
-    getData();
-  };
-
-  return (
- 
-    <div className="App">
-      
-     <button onClick={onClick}></button>
-     {/* <props.name/> */}
-      <div className="recipes">
-        {recipes !== [] &&
-          recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
-      </div>
-      </div>
-
-  );
+  click() {
+    var newclick = this.state.clicks + 1;
+    this.setState({clicks: newclick});
+    // Set it
+    localStorage.setItem('clicks', newclick);
+  }
+  handleFormSubmit(e) {
+    e.preventDefault()
+   localStorage.setItem('document',JSON.stringify(this.state));
 }
+  render() {
+    return (
+      <div>
+        <h2>Add Recipe</h2>
 
-export default Display;
+        <form onSubmit={this.handleFormSubmit}>
+
+        <label>Title</label>
+                    <input type="text" name="title" value={this.state.title} onChange={this.handleChange} />
+            
+                
+                    <label>Cook Time</label>
+                    <input type="text" name="cooktime"  value={this.state.cooktime} onChange={this.handleChange} />
+            
+                
+                    <label>Ingredients</label>
+                    <input type="text" name="ingredients" value={this.state.ingredients} onChange={this.handleChange} />
+            
+                    <label>Method</label>
+                    <input type="text" name="method"style={{height:"100px",resize: 'vertical'}}  value={this.state.method} onChange={this.handleChange} /> 
+
+ 
+
+<button onClick={this.click}>Add Recipe</button> Counter {this.state.clicks}
+
+    
+    </form>
+       
+      </div>
+    );
+  }
+}
+export default App;
