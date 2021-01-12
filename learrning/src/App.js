@@ -34,6 +34,7 @@ class App extends Component{
            
       
       <Navbar/>
+      <hr/>
       <Switch>
       <Route exact path = "/" component= {Home} />
 
@@ -53,5 +54,7 @@ class App extends Component{
       );
     }
 }
+
+
 
 export default App;
